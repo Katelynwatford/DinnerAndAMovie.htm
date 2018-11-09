@@ -1,0 +1,41 @@
+<script type="text/javascript">
+<!--
+var earlyBirdTicket = 5;
+var dinnerDuringWeek = 8;
+var eveningTicket = 10;
+var dinnerDuringWeekend = 12;
+var numberOfTickets, typeOfTicket, typeOfDay;
+//input
+numberOfTickets = prompt("number of ticket?");
+numberOfTickeet = parseInt(numberOfTickets);
+typeOfTicket = prompt("type of ticket?");
+typeOfTicket = typeOfTicket.toLowerCase(); (donest have to be here)
+typeOfDay = prompt("type of day?");
+typeOfDay = typeOfDay.toLowerCase();
+//calculations
+if (typeOfTicket == "earlybird")
+{
+ 	pricePerTicket = earlyBirdTicket;
+}
+else
+{
+ 	pricePerTicket = eveningTicket;
+}
+if (typeOfDay == "weekday")
+{
+	pricePerDinner = dinnerDuringWeek;
+}
+else
+{
+	pricePerDinner = dinnerDuringWeekend;
+}
+costOfDinnerAndMovie = pricePerTicket + pricePerDinner;
+totalAmountOwed = numberOfTickets * costOfDinnerAndMovie;
+//output
+document.write("total number of tickets: " + numberOfTickets);
+document.write("<br>total price per ticket is: $" + pricePerTicket);
+document.write("<br>total price per dinner is: $" + pricePerDinner);
+document.write("<br>cost of dinner and movie is: $" + costOfDinnerAndMovie);
+document.write("<br>total amount owed is: $" + totalAmountOwed);
+// -->
+</script>
